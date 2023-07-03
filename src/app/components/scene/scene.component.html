@@ -1,0 +1,13 @@
+<div class="contenido-centrado">
+    <div *ngFor="let frase of frases; let i = index "[ngClass]="{'frase-destacada': i === contador}" class="frases">
+        {{ frase }}
+    </div>
+</div>
+
+
+<div class="botones-container">
+    <div class="botones">
+        <button type="button" (click)="siguiente_frase()"><span>+</span></button>
+        <button type="button" (click)="anterior_frase()"><span>-</span></button>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+.contenido-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.frases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #AEDFF7;
+    border-radius: 30px;
+    width: 700px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #F5F5DC; 
+    color: #387248;
+}
+
+.frase-destacada {
+    background-color: yellowgreen; 
+    border: 2px solid #AEDFF7; 
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.botones button {
+    width: 400px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    color: #E6E6FA;
+    background-color: #387248; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: xx-large;
+}
+
+.botones button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #375f9e, #387248);
+    mix-blend-mode: overlay;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.botones button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #375f9e;
+    transition: all 0.3s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.botones button:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.botones button:hover:after {
+    opacity: 1;
+}
+
+.botones button span {
+    position: relative;
+    z-index: 3;
+}
