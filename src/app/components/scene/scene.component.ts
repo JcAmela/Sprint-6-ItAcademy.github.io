@@ -8,26 +8,27 @@ import { Component, Input } from '@angular/core';
 
 export class SceneComponent {
 
-  @Input() frases: string[] = [];
-  
+  @Input() frases: { txt: string, img: string }[] = []; 
+  @Input() fondoActual:string='';
 
 contador:number=0;
 
-siguiente_frase(){
-  if(this.contador >= this.frases.length - 1){
-    this.contador = 0;
+siguiente_frase() {
+  if (this.contador >= this.frases.length - 1) {
+      this.contador = 0;
   } else {
-    this.contador++;
+      this.contador++;
   }
+  this.fondoActual = this.frases[this.contador].img;
 }
 
-anterior_frase(){
-  if(this.contador <= 0){
-    this.contador = this.frases.length - 1;
+anterior_frase() {
+  if (this.contador <= 0) {
+      this.contador = this.frases.length  -1;
   } else {
-    this.contador--;
+      this.contador--;
   }
+  this.fondoActual = this.frases[this.contador].img;
 }
-
 
 } 

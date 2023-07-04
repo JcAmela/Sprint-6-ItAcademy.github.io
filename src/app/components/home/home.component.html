@@ -1,1 +1,9 @@
-<app-scene [frases]="frases"></app-scene>
+<div class="container">
+    <div *ngIf="mostrarBienvenida" class="welcome">
+        <h1 class="welcome-title">Bienvenidos al Sprint-6</h1>
+        <p class="welcome-text">Prepárate para ver mis avances de programación en Angular a través de distintas escenas. Cuando estés listo, pulsa el botón de "Comenzar".</p>
+        <button class="welcome-btn" (click)="comenzar()">Comenzar</button>
+    </div>
+    
+    <app-scene *ngIf="!mostrarBienvenida" [frases]="frases" [fondoActual]="fondoActual"></app-scene>
+</div>
