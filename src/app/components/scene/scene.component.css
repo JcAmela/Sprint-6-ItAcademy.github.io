@@ -1,3 +1,13 @@
+.titulo {
+    font-size: 3em;
+    color: #6c63ff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+
 .container{
     background-size: cover;
     background-position: center;
@@ -7,15 +17,14 @@
     min-width: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
+}
 .contenido-centrado {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
