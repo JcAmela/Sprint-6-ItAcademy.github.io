@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi repositorio! Soy Juan Carlos Amela y este es el sexto sprint del curso de programación de IT Academy Barcelona Activa. Durante este sprint, nos hemos adentrado en el fascinante mundo de Angular y la construcción de aplicaciones SPA (Single Page Applications).
 
-[Mira la aplicación en acción!](https://JcAmela.github.io/Sprint-6-ItAcademy.github.io/)
+[Mira la aplicación en acción!](https://jcamela.github.io/Sprint6-ItAcademy/)
 
 ## 🎯 Objetivo del Proyecto 
 
